@@ -1,0 +1,329 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+}
+
+.enlances {
+  padding-right: 3em;
+}
+
+.enlances li {
+  display: inline;
+  list-style: none;
+  margin: auto 1em auto 1em;
+  align-items: center;
+  border-left: 1px solid wheat;
+}
+
+.enlances li a {
+  color: white;
+  padding-left: 2em;
+  text-decoration: none;
+  font: bold 13px arial;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #484848;
+  background-color: white;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.contact {
+  padding-left: 4%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  background-color: gray;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.contact h4 {
+  font-size: 15px;
+}
+
+.contact li {
+  list-style: none;
+}
+
+.phone,
+.location,
+.email {
+  display: flex;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact img {
+  width: 25px;
+  height: 25px;
+  padding-right: 15px;
+  padding-top: 0.5em;
+}
+
+.contact .footer {
+  text-align: center;
+}
+
+
+footer {
+  background-color: gray;
+  width: 100%;
+  height: 10%;
+}
+
+
+
+.formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-contact {
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.formulario h1 {
+  padding-top: 2em;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+form {
+  background: #fff;
+  padding: 10% auto auto auto;
+  display: block;
+}
+
+form .grupo {
+  position: relative;
+  margin: 45px;
+  border: black 1px solid;
+  border-radius: 4px;
+  border-bottom: none;
+}
+
+form .input-text {
+  margin-left: -40%;
+}
+
+form p {
+  text-align: center;
+  margin-left: -20%;
+  margin-top: -2.5%;
+}
+
+.container__list p {
+  text-align: left;
+  margin: auto auto -4% 5%;
+}
+
+.cursoUDEC {
+  display: none;
+}
+
+.checkbox-contenedor {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+#myCheckBox {
+  width: 30px;
+}
+
+.list {
+  position: relative;
+  margin: 45px;
+  border: black 1px solid;
+  border-radius: 4px;
+  border-bottom: none;
+  font-size: 15px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 90.7%;
+  color: rgb(94, 93, 93);
+  background-color: white;
+}
+
+.other-list {
+  position: relative;
+  margin: -30px 45px 45px 45px;
+}
+
+.other {
+  position: relative;
+  margin: 45px;
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 100%;
+  margin-left: auto;
+}
+
+.errorMessagge {
+  background: #004f9e;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  padding: 1rem;
+  width: 50%;
+  display: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 45px;
+}
+
+input,
+textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 15px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  color: rgb(94, 93, 93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196F3;
+}
+
+label {
+  color: var(--colorTextos);
+  font-size: 13px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+  width: 100%;
+}
+
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.barra::before {
+  content: '';
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #e2f882, #e9ecbaf3);
+  transition: 0.3s ease all;
+  left: 0%;
+}
+
+button {
+  background: #004f9e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #585c3f, #eff874); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: block;
+  width: 20%;
+  height: 40px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 1px auto 30px;
+  cursor: pointer;
+}
+
+
+
+.menu-sub-container {
+  display: flex;
+  flex: content;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background-color: #29539b;
+  background-image: url(../images/Selección_130.png);
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.svg-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.name-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  width: 60%;
+  background-color: #004f9e;
+  font-size: 20px;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.title h2 {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.name-parrafo {
+  margin: auto 20% 5% 20%;
+  text-align: justify;
+  color: black;
+  text-shadow: white 0.1em 0.1em 0.2em
+}

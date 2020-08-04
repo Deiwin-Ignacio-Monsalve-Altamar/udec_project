@@ -1,0 +1,172 @@
+<head>
+  <title>udec_project</title>
+</head>
+
+<body>
+  {{> udecForms}}
+</body>
+<template name="udecForms">
+  <header class="header">
+    <div class="cotainer-header">
+      <ul class="enlances">
+        <li><a href="https://www.udecolombia.edu.co/egresados/">Home</a></li>
+        <li><a href="https://www.udecolombia.edu.co/bienesta/">Bienestar</a></li>
+        <li><a href="https://www.udecolombia.edu.co/contacto/">Contactanos</a></li>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <div class="hero">
+      <!-- <img class="photo-principal" src="images/Selección_130.png" width="100%">
+-->
+      <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+          preserveAspectRatio="none" style="height: 100%; width: 100%;">
+          <path d="M-3.67,23.19 C149.99,150.00 279.06,-31.08 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #fff;"></path>
+        </svg></div>
+    </div>
+  </section>
+  <section>
+    <div class="name-title">
+      <div class="title">
+        <h2>Programa de Egresados UDEC</h2>
+      </div>
+    </div>
+    <div class="name-parrafo">
+      <p>Queremos conectar los talentos con las oportunidades. Por eso, te invitamos en calidad de Egresado(a) de U DE
+        COLOMBIA a diligenciar este formulario de solicitud de publicación de tu perfil profesional, y de servicios que
+        ofreces, con el fin
+        de darlos a conocer en nuestros medios de comunicación.
+        <br>
+        <br> Con el diligenciamiento de la presente encuesta DOY MI CONSENTIMIENTO para la utilización y publicación de
+        mi perfil y servicios que ofrezco, contemplando el tratamiento de mis datos sólo para fines académicos de la
+        Corporación Universitaria
+        U DE COLOMBIA.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="formulario">
+    <div class="formulario-contact">
+      <form action="GET" id="form">
+        <div class="form">
+          <h1>Conectando Talentos UDEC</h1>
+          <div class="grupo">
+            <input type="text" name="fullname" id="fullname" required><span class="barra"></span>
+            <label>Nombre y apellido completo</label>
+          </div>
+          <div class="grupo">
+            <input type="text" name="document" id="document" required><span class="barra"></span>
+            <label>Documento de identidad</label>
+          </div>
+          <div class="grupo">
+            <input type="text" name="email" id="email" required><span class="barra"></span>
+            <label>Correo electronico</label>
+          </div>
+          <div class="grupo">
+            <input type="text" name="phoneNumer" id="phoneNumber" required><span class="barra"></span>
+            <label>Numero celular</label>
+          </div>
+          <!--                     <div class="grupo">
+                    <input type="text" name="" id="" required><span class="barra"></span>
+                    <label>Programa academico</label>
+                </div> -->
+
+
+          <div class="other">
+            Programa Académico
+          </div>
+          <div class="other-list">
+            <select name="list" class="list">
+              <option selected value="0"> Elige una opción </option>
+              <option value="1">Administración Financiera</option>
+              <option value="2">Contaduría Pública</option>
+              <option value="3">Derecho</option>
+              <option value="4">Ingeniería Comercial</option>
+              <option value="5">Especialización en Estándares Internacionales NIIF - NIC</option>
+            </select>
+          </div>
+          <div class="other">
+            ¿Tienes un título de pregrado y/o posgrado diferente al que cursaste en U DE COLOMBIA?
+          </div>
+          <div class="checkbox-contenedor">
+            <input type="checkbox" id="myCheckBox" name="UDEC">
+            <div>Si</div>
+          </div>
+          <div class="checkbox-contenedor">
+            <input type="checkbox" id="myCheckBo" name="UDEC">
+            <div>No</div>
+          </div>
+          <div class="grupo cursoUDEC">
+            <input type="text" name="title" id="title"><span class="barra"></span>
+            <label>¿Cual?</label>
+          </div>
+
+
+          <div class="grupo">
+            <input type="text" name="address" id="address" required><span class="barra"></span>
+            <label>Dirrección</label>
+          </div>
+          <div class="grupo">
+            <input type="text" name="location" id="location" required><span class="barra"></span>
+            <label>Ciudad de residencia</label>
+          </div>
+          <!-- 
+                        <button type="texto">¿?</button> -->
+          <div class="grupo">
+            <textarea name="profile" id="textAreElement" rows="10" required></textarea><span class="barra"></span>
+            <label>Describe el perfil que quieres que otros vean, con el fin de dar a conocer tus servicios, marca o
+              productos.
+            </label>
+
+          </div>
+
+          <div class="errorMessagge" id="errorMessage">Excediste limite máximo de caracteres (500)</div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <div class="contact">
+    <section id="contactanos" class="contactanos">
+      <h4>Contáctanos</h4>
+      <div class="menu-contactanos">
+        <ul>
+          <li class="phone">
+            <img src="./images/phone-regular-24.png" alt="">
+            <p> +57 (4) 239 80 80 </p>
+          </li>
+          <li class="email">
+            <img src="./images/envelope-open-regular-24.png" alt="">
+            <p>contacto@udecolombia.edu.co</p>
+          </li>
+          <li class="location">
+            <img src="./images/location-plus-regular-24.png" alt="">
+            <p>Calle 56 Nº 41 – 147 (Bolivia con Girardot), Medellín, Antioquia 050012 - Colombia.</p>
+          </li>
+        </ul>
+      </div>
+      <h4>Síganos</h4>
+      <div class="siganos">
+        <a href="https://www.youtube.com/channel/UCuGQC8cLoTyOaXhrqgF0k6w">
+          <img src="./images/youtube-logo-24.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/udecolombia/">
+          <img src="./images/instagram-logo-24.png" alt="">
+        </a>
+        <a href="https://www.facebook.com/corporacionuniversitariaudecolombia/">
+          <img src="./images/facebook-square-logo-24.png" alt="">
+        </a>
+        <a href="https://twitter.com/udecolombia1">
+          <img src="./images/twitter-logo-24.png" alt="">
+        </a>
+      </div>
+      <div class="footer">
+        <p>2020 U de Colombia</p>
+      </div>
+    </section>
+  </div>
+</template>
